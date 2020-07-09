@@ -1,10 +1,12 @@
 # Mata-Mosquito Game
 Pequeno jogo criado apenas com HTML5, CSS3, Bootstrap e Javascript.
 
+![imagem-jogo](https://github.com/amanda-emerick/game-mata-mosquito/blob/master/game-introduction.png)
+
 ## Sobre o jogo
-Para jogar, acesse esse link:
-### Objetivo do jogo
-O objetivo principal do jogo é eliminar todos os mosquitos que aparecem na tela, mantendo-se vivo até o final da partida. Para isso, o jogador deve clicar com o cursor em cima dos mosquitos conforme eles forem aparecendo. Caso o jogador deixe o mosquito escapar, perde uma vida (ao todo são 4 vidas disponíveis). Cada partida tem duração de 20 segundos, e o jogo possui três níveis de dificuldade: fácil, difícil e Chuck Norris. Conforme o nível escolhido, o tempo que os mosquitos permanecem na tela é menor, aumentando o grau de dificuldade.
+Para jogar, acesse esse link: https://amanda-emerick.github.io/game-mata-mosquito/
+
+Objetivo: eliminar todos os mosquitos que aparecem na tela, mantendo-se vivo até o final da partida. O jogo possui três níveis de dificuldade: fácil, difícil e Chuck Norris. Conforme o nível escolhido, o tempo que os mosquitos permanecem na tela é menor, aumentando o grau de dificuldade.
 
 ## Sobre o projeto
 Este projeto faz parte do curso de Desenvolvimento Web da Udemy, ministrado pelo professor Jorge Sant Anna. É o projeto final do módulo de Javascript.
