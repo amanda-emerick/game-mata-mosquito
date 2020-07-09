@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mata-Mosquito</title>
+		<meta charset="utf-8">
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!--Inclusão Bootstrap CDN -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+		<!--Inclusão follha de estilo CSS -->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<script>
+			//Botão Iniciar Jogo
+			function iniciarJogo () {
+				var nivel = document.getElementById('nivel').value
+				if (nivel === '') {
+					alert('Selecione um nível para iniciar o jogo')
+					return false //interrompe a execução do restante da função
+				}
+				//redireciona para a página do jogo e informa o parâmetro do nível selecionado
+				window.location.href = "app.html?" + nivel
+			}
+		</script>
+
+	</head>
+
+	<body>
+		
+		<div class="container">
+			
+			<div class="row"><!--imagem inicial-->
+				<div class="col-12 d-flex justify-content-center align-self-center">
+					<img src="imagens/game.png" class="mt-1 img-fluid" id="imginicial">
+				</div>
+			</div><!--/row imagem inicial-->
+
+			<div class="row justify-content-center"><!--início selecionar nível-->
+				<div class="col-sm-6 col-lg-4">
+					<div class="mb-1">
+						<select class="form-control" id="nivel">
+							<option value="">-- Selecione o nível --</option>
+							<option value="normal">Fácil</option>
+							<option value="dificil">Difícil</option>
+							<option value="chucknorris">Chuck Norris</option>
+						</select>
+					</div>
+				</div>
+			</div><!--/row selecionar nível-->
+
+			<div class="row justify-content-center "><!--botão iniciar jogo-->
+				<div class="col-sm-6 col-lg-4">
+					<button type="button" style="font-size: 18px;" class="btn btn-danger btn-block" onclick="iniciarJogo()">Iniciar Jogo</button>
+				</div>
+			</div><!--/row botão iniciar jogo-->
+		</div><!--/fim container-->
+
+	</body>
+</html>

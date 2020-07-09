@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mata-Mosquito</title>
+		<meta charset="utf-8">
+		
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!--Inclusão Bootstrap CDN -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+		<!--Inclusão follha de estilo CSS -->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<!--Inclusão script JS -->
+		<script src="js/jogo.js"></script>
+	</head>
+
+	<body onresize="ajustaTamanhoPalcoJogo()">
+
+		<div class="container"><!--início container-->
+			
+			<!-- imagem da vitória ou game-over -->
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex justify-content-center">
+						<img src="" id="imgFinal" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			<!--/fim imagem vitória ou derrota-->
+
+			<!-- painel fim de jogo-->
+			<div class="row justify-content-center">
+				<div class="col-sm-6 col-lg-4">
+					<div class="rounded painelFinal font-weight-bold text-center mb-2 mt-1" id="painelFinal">
+						Mosquitos mortos: <span id="totalMortos" class="text-primary"></span><br>
+						Mosquitos vivos: <span id="totalVivos" class="text-danger"></span>
+					</div>
+				</div>
+			</div>
+			<!--/fim painel fim de jogo-->
+
+			<!-- botões fim de jogo -->
+			<div class="row justify-content-center">
+				<div class="col-sm-6 col-lg-4">
+					<button type="button" style="font-size: 18px;" class="btn btn-primary btn-block mb-2" onclick="jogarNovamente()" id="btn-jogar-novamente">Jogar Novamente</button>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-sm-6 col-lg-4">
+					<button type="button" style="font-size: 18px;" class="btn btn-danger btn-block" onclick="outroNivel()" id="btn-outro-nivel">Escolher outro nível</button>
+				</div>
+			</div>
+			<!--/fim botões fim de jogo -->
+			
+			<!-- painel lateral -->
+			<div class="painel" id="painel">
+				
+				<div class="vidas">
+					<img id="v1" src="imagens/coracao_cheio.png">
+					<img id="v2" src="imagens/coracao_cheio.png">
+					<img id="v3" src="imagens/coracao_cheio.png">
+					<img id="v4" src="imagens/coracao_cheio.png">
+				</div>
+
+				<div class="cronometro">
+					Tempo restante: <span id="cronometro"></span>s
+				</div>
+						
+				<div class="cronometro">
+					Mosquitos mortos: <span id="contadorMortos" class="text-primary"></span>
+				</div>
+						
+				<div class="cronometro">
+					Mosquitos vivos: <span id="contadorVivos" class="text-danger"></span>
+				</div>
+			</div>
+			<!--/fim painel lateral-->
+		
+		</div><!--/fim container-->
+
+		<script>
+			//inicia o cronômetro com seu primeiro valor
+			document.getElementById('cronometro').innerHTML = tempo
+
+			//chama a função que cria os mosquitos e define a velocidade (intervalo)
+			//com que eles aparecem
+			var criaMosquito = setInterval(function () {
+				posicaoRandomica()
+			}, velocidade)
+		</script>
+
+	</body>
+</html>

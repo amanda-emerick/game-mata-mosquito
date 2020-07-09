@@ -1,0 +1,95 @@
+/*Formatações gerais*********/
+body, html {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url(../imagens/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	cursor: url(../imagens/mata_mosquito.png) 30 30, auto;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 16px;
+}
+
+.painel {
+	position: absolute;
+	width: 200px;
+	padding: 10px;
+	left: 0px;
+	bottom: 0px;
+	border-top: solid 1px #fff;
+	background: rgba(255,255,255,0.7);
+}
+
+.painelFinal {
+	background: rgba(255,255,255,0.7);
+	display: none;
+}
+
+.vidas {
+	float: left;
+}
+
+.cronometro {
+	float: left;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#btn-jogar-novamente, #btn-outro-nivel {
+	display: none;
+}
+
+/*Tamanho dos mosquitos********/
+.mosquito1 {
+	width: 50px;
+	height: 50px;
+}
+
+.mosquito2 {
+	width: 75px;
+	height: 75px;
+}
+
+.mosquito3 {
+	width: 90px;
+	height: 90px;
+}
+
+/*Lado do mosquito********/
+.ladoB {
+	transform: scaleX(-1);
+}
+
+/*Animações ********/
+#imginicial {
+	animation-name: animacao-imagem;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	position: relative;
+}
+
+@-webkit-keyframes animacao-imagem {from {top: 0;} to {top: 25px;}}
+@-moz-keyframes animacao-imagem {from {top: 0;} to {top: 25px;}}
+@-o-keyframes animacao-imagem {from {top: 0;} to {top: 25px;}}
+@keyframes animacao-imagem {from {top: 0;} to {top: 25px;}}
+
+.animation {
+	opacity: 0;
+	justify-content: center;
+	animation-name: animacao-fim;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	max-width: 100%;
+	height: auto;
+}
+
+@-webkit-keyframes animacao-fim {from {opacity: 0; width: 300px;} to {opacity: 1; width: 500px;}}
+@-moz-keyframes animacao-fim {from {opacity: 0; width: 300px;} to {opacity: 1; width: 500px;}}
+@-o-keyframes animacao-fim {from {opacity: 0; width: 300px;} to {opacity: 1; width: 500px;}}
+@keyframes animacao-fim {from {opacity: 0; width: 300px;} to {opacity: 1; width: 500px;}}
