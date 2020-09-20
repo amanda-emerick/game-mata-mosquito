@@ -9,8 +9,6 @@ Idioma do Readme: [Português](https://github.com/amanda-emerick/game-mata-mosqu
 <a name=anchor></a>
 [Demo](#demo) | [Sobre o projeto](#about) | [Objetivo do jogo](#objective) | [Prévia](#preview) | [Screenshots](#screenshots) | [Tecnologias](#technologies) | [Melhorias realizadas](#new-features) | [Como Utilizar](#how-to-run) | [Licença](#license)
 
-![imagem-jogo](https://github.com/amanda-emerick/game-mata-mosquito/blob/master/game-introduction.png)
-
 <a id="demo"></a>
 ## :eyes: Demo
 **Para jogar, acesse esse link: https://amanda-emerick.github.io/game-mata-mosquito/**
