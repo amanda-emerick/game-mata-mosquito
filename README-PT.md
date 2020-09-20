@@ -1,4 +1,4 @@
-# :bug: Mata-Mosquito Game :bug: 
+# :bug: Jogo Mata-Mosquito :bug: 
 <h3>Pequeno jogo criado apenas com HTML5, CSS3, Bootstrap e Javascript.</h3>
 
 <img alt="Project lang" src="https://img.shields.io/badge/Project%20Language-Portuguese-orange"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/amanda-emerick/game-mata-mosquito?color=orange"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/amanda-emerick/game-mata-mosquito?color=orange"> <img alt="GitHub" src="https://img.shields.io/github/license/amanda-emerick/game-mata-mosquito?color=orange">
@@ -56,7 +56,7 @@ Em seguida, executar o arquivo "index.html" no seu navegador.
 
 <a id="license"></a>
 ## :closed_book: Licença
-Este projeto está sob a [Licença MIT](https://github.com/amanda-emerick/proffy/blob/master/LICENSE).
+Este projeto está sob a [Licença MIT](https://github.com/amanda-emerick/game-mata-mosquito/blob/master/LICENSE).
 
 <p align="center">
 <b>Feito com :heart: por Amanda Emerick.</b>
